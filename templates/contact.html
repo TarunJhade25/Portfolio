@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content1 %}
+
+<div class="row my-5">
+    <div class="col-4 text-center my-5 text-light" >
+        <h1 class="mt-5">Stay Connected</h1>
+        <h3 class="mt-3">portfolio.tarun.jhade@gmail.com</h3>
+
+        <div class="col-12 d-flex justify-content-center align-items-center mt-5 ">
+            <a href="https://www.linkedin.com/in/tarun-jhade-302051227" tartget="_blank" class="ms-3">
+                <img src="{% static 'images/download.png'%}" alt="linkedin" width="50" height="50" class="social_links">
+            </a>
+            <a href="https://github.com/TarunJhade25" tartget="_blank" class="ms-3">
+                <img src="{% static 'images/download3.jpg'%}" alt="Github" width="50" height="50" class="social_links">
+            </a>
+            <a href="https://www.instagram.com/tarun.jhade/" tartget="_blank" class="ms-3">
+                <img src="{% static 'images/download1.jpg'%}" alt="instagram" width="50" height="50" class="social_links">
+            </a>
+        </div>
+    </div>
+
+    <div class="col-5 offset-1 mt-3">
+        <div class="container form-container">
+            <form method="POST" action="">
+                {% csrf_token %}
+                <div class="form-group m-3">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" class="form-control" id="name" required>
+                </div>
+                <div class="form-group m-3">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" class="form-control" id="email" required>
+                </div>
+                <div class="form-group m-3">
+                    <label for="phone">Phone no.</label>
+                    <input type="tel" name="phone" class="form-control" id="phone" required>
+                </div>
+                <div class="form-group m-3">
+                    <label for="message">Any message</label>
+                    <textarea name="message" class="form-control" id="message" rows="4" required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>  
+    </div>
+
+</div>
+
+{% endblock content1 %}

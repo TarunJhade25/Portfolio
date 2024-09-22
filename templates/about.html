@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content1 %}
+<div class="row my-5">
+    <div class="col-4 d-flex justify-content-center align-items-center">
+        <img src="{% static "images/mypic.jpg" %}" alt="MY PIC" class="about_image">
+    </div>
+    <div class="col-7 text-left text-light">
+        <h3>Hi there!,</h3>
+        <p>My name is Tarun, and I hope this message finds you well. I have a strong passion for technology and programming, committed to continuous learning and staying informed about the latest advancements in the field for personal and professional growth. I'm excited to explore emerging technologies and eager to take on new challenges that enhance my skills.</p>
+        <p>I believe my dedication to staying current with industry trends will enable me to contribute effectively in this dynamic landscape. Thank you for your time, and I look forward to opportunities to collaborate or learn from others in this exciting field.</p>
+
+    </div>
+</div>
+
+
+{% comment %} row one {% endcomment %}
+<div class="row my-2">
+    <h3 class="text-center" style="color:#4fffb0">Penetration Testing Tools</h3>
+    <div class="d-flex justify-content-around align-items-center mt-1 mb-3">
+        {% comment %} <img src="{% static "images/kali_linux.jpg" %}" alt="html" width="110" height="70" class="img-fluid"> {% endcomment %}
+        <img src="{% static "images/burp_suite.jpg" %}" alt="html" width="110" height="80" class="social_links">
+        <img src="{% static "images/nessus.png" %}" alt="html" width="110" height="80" class="social_links">
+        <img src="{% static "images/nmap.jpg" %}" alt="html" width="110" height="80" class="social_links">
+        <img src="{% static "images/metasploit.jpg" %}" alt="html" width="110" height="80" class="social_links">
+        <img src="{% static "images/wireshark.png" %}" alt="html" width="110" height="80" class="social_links">
+        <img src="{% static "images/pentest.jpg" %}" alt="html" width="110" height="80" class="social_links">
+    </div>
+</div>
+
+{% comment %} row 2 {% endcomment %}
+<div class="row my-2">
+    <h3 class="text-center" style="color:#4fffb0">Development Tools or Language</h3>
+    <div class="d-flex justify-content-around align-items-center mt-1 mb-3">
+        <img src="{% static "images/html.png" %}" alt="html" width="110" height="80" class="social_links">
+        <img src="{% static "images/CSS-Logo.png" %}" alt="html" width="110" height="80" class="social_links">
+        <img src="{% static "images/django-badge.png" %}" alt="html" width="110" height="80" class="social_links">
+        {% comment %} <img src="{% static "images/.jpg" %}" alt="html" width="110" height="80" class="social_links"> {% endcomment %}
+        {% comment %} <img src="{% static "images/.jpg" %}" alt="html" width="110" height="80" class="social_links"> {% endcomment %}
+        <img src="{% static "images/MySQL.png" %}" alt="html" width="110" height="80" class="social_links">
+    </div>
+</div>
+
+
+{% endblock content1%}    
