@@ -22,7 +22,7 @@ def projects(request):
             'title': 'Ecommerce',
             'path': 'images/ecommerce.PNG',
         },
-
+ 
         {
             'title': 'Timetable Scheduler',
             'path': 'images/timtable.PNG',
@@ -68,7 +68,10 @@ def contact(request):
 
     return render(request, 'contact.html', {'form': form})
 
-def resume(request):
+ 
+
+# Render the resumes page
+def resumes(request):
     resume_path="myresume/resume.pdf"
     resume_path=staticfiles_storage.path(resume_path)
     if staticfiles_storage.exists(resume_path):
@@ -78,4 +81,3 @@ def resume(request):
             return response
     else:
         return HttpResponse("Resume Not Found!!!", status=404)
-    
