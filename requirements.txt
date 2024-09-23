@@ -2,3 +2,6 @@ asgiref==3.8.1
 Django==5.1.1
 sqlparse==0.5.1
 tzdata==2024.1
+psycopg2==2.9.3
+Pillow==9.2.0
+six==1.16.0
